@@ -1,0 +1,10 @@
+apt-get update
+
+apt-get install vim mercurial build-essential
+
+apt-get install tmux python2.7-dev git wget
+
+mkdir -p $PROVISION_TEMP/pip
+cd $PROVISION_TEMP/pip
+wget -N https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
+python ez_setup.py
