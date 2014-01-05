@@ -12,5 +12,7 @@ if ! type pip > /dev/null; then
     cd $PROVISION_TEMP/pip
     wget -N https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
     python ez_setup.py
+    wget -N https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+    python get-pip.py
 fi
 
